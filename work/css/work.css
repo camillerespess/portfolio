@@ -1,0 +1,253 @@
+html {
+font-size: 100%;
+box-sizing: border-box;
+}
+
+* {
+box-sizing: inherit;
+}
+
+#wrapper {
+display: flex;
+justify-content: center;
+}
+
+#wrappertwo {
+display: flex;
+justify-content: center;
+}
+
+.section4 {
+  background-color: #71a0a1;
+  padding: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* external css: flickity.css */
+.carousel {
+  background: #fff;
+  width: 970px;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* carousel for clips */
+.carousel-cell {
+  width: 300px;
+  height: 550px;
+  margin-right: 15px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* carousel for web design */
+.carouselweb {
+  background: #fff;
+  width: 820px;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.carousel-cellweb {
+  width: 400px;
+  height: 390px;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.clips {
+  cursor: pointer;
+}
+
+body {
+    font-family: Raleway, Calibri, Arial, sans-serif;
+    background: #fff;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+h1 {
+  font-family: Raleway, Calibri, Arial, sans-serif;
+
+}
+
+h2 {
+font-family: Raleway, Calibri, Arial, sans-serif;
+font-size: 1.5rem;
+padding-left: 2rem;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #1A1A1A;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 0;
+  color: #1A1A1A;
+  align-items: center;
+}
+
+p {
+font-family: 'Inria Serif', serif;
+max-width: 35rem;
+font-size: 0.9rem;
+line-height: 1.5rem;
+}
+
+span {
+  font-family: Raleway, Calibri, Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+/* overlay on clips from https://www.w3schools.com/howto/howto_css_image_overlay.asp*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #71a0a1;
+}
+
+.carousel-cell:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.clips:hover {
+}
+
+/* end overlay css */
+
+
+#mobiledrop {
+display: none;
+}
+
+.material-icons {
+  color: #1A1A1A;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  float: right;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  max-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+nav ul {
+font-family: Raleway;
+display: flex;
+list-style: none;
+margin: 1rem;
+text-transform: uppercase;
+float: right;
+}
+
+nav ul li {
+margin: 0;
+margin-left: 1em;
+}
+
+a:link {
+color: #1A1A1A;
+}
+
+a:visited {
+  color: #1A1A1A;
+  }
+
+a:focus {
+  color: #1A1A1A;
+  }
+
+a:hover {
+  color: #71a0a1;
+  }
+
+a:active {
+  color: #1A1A1A;
+  }
+
+a {
+  text-decoration: none;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+@media only screen and (max-width: 825px){
+
+  nav ul {
+    display: none;
+  }
+
+#mobiledrop {
+    display: flex;
+    padding: 1rem;
+  }
+h4 {
+padding-left: 1rem;
+}
+p {
+padding-left: 1rem;
+}
+
+}
